@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Roboto+Condensed&display=swap');
 
+@font-face {
+    font-family: "Biennale";
+    src: url('../fonts/Biennale\ Regular.otf');
+}
+
 body {
     background: #1e1e1e;
     color: #fff;
