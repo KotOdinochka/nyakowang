@@ -26,6 +26,27 @@
     <title>Nyako.WANG</title>
 </head>
 <body>
-    <h1>Крутой сайт :3</h1>
+    <h1>Крутой сайт :3</h1><br />
+    <span href="#" class="clickable" id="start">Нажми</span>
+    <script>
+        let toggledSong = false;
+        let audio = new Audio('song.mp3');
+        let toggleElement = document.getElementById('start');
+        audio.volume = 0.1;
+        audio.onended = () => {
+            if(toggledSong) audio.play()
+        }
+        toggleElement.onclick = () => {
+            if(!toggledSong) {
+                audio.play()
+                toggleElement.innerText = 'Надоело, нажми снова'
+                toggledSong = !toggledSong;
+            } else {
+                toggleElement.innerText = 'Нажми'
+                audio.pause();
+                toggledSong = !toggledSong;
+            }
+        }
+    </script>
 </body>
 </html>
