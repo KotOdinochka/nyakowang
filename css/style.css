@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Roboto+Condensed&display=swap');
 
+*, *:after, *:before {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: "Biennale";
     src: url('../fonts/Biennale\ Regular.otf');
@@ -8,238 +13,15 @@
 body {
     background: #1e1e1e;
     color: #fff;
-    background-image: url("../img/bg.png");
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
-}
-
-.container-xxl {
-    background: #00000050;
-}
-
-.highlighted {
-    color: #000;
-    background: #fff;
-    width: max-content;
-    text-align: center;
-    font-family: "Inter";
-    padding: 3px;
-}
-
-.main {
-    width: 100%;
+    
+    width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 150px;
-}
 
-.main p {
-    max-width: 800px;
-}
-
-section .header {
-    font-family: "Biennale";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 140%;
-    text-align: center;
-
-    color: #FFFFFF;
-}
-
-section .underscore {
-    content: " ";
-    margin: auto;
-    border: 2px solid #3D204E;
-    width: 154px;
-    height:2px;
-}
-
-.knowledgeGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 52px;
-    
-    padding: 50px;
-}
-
-.lastGithubReposGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 52px;
-    
-    padding: 50px;
-
-    text-align: left;
-}
-
-.lastGithubReposGrid .card {
-    padding: 25px 25px 15px 25px;
-}
-
-.lastGithubReposGrid .blocks {
-    font-size: 24px;
-}
-
-.lastGithubReposGrid .title {
-    font-size: 22px;
-}
-
-.lastGithubReposGrid .description {
-    font-family: "Biennale";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 140%;
-
-    color: #A49898;
-}
-
-@media (max-width: 1300px) {
-    .knowledgeGrid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .lastGithubReposGrid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-@media (max-width: 650px) {
-    .knowledgeGrid {
-        grid-template-columns: 1fr;
-    }
-}
-
-.projects {
-    /* padding: 50px; */
-    margin: 50px 50px 50px 50px;
-}
-
-.project {
-    background: #242424;
-    display: grid;
-
-    padding: 3px;
-    border-radius: 8px;
-    grid-template-columns: 305px 1fr;
-    grid-gap: 22px;
-    font-size: 22px;
-
-    margin-top: 20px;
-
-    position: relative;
-}
-
-
-.project .links {
-    position: absolute;
-    bottom: 0;
-}
-
-.project .link {
-    margin-left: 15px;
-}
-
-.project .description {
-    text-align: left;
-}
-
-.backgroundGray {
-    background: #242424;
-}
-
-.knowledgeGrid .card {
-    height: 386px;
-
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.knowledgeGrid .card .icon {
-    margin-top: 54px;
-    font-size: 72px;
-    color: #8e5b96;
-}
-
-.knowledgeGrid .card .title {
-    font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: 14px;
-}
-
-.knowledgeGrid .card p {
     font-family: "Roboto";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 140%;
-    /* or 25px */
-    text-align: center;
 
-    max-width: 225px;
-
-    color: #C0C0C0;
-}
-
-.main h2 {
-    font-family: "Biennale";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 72px;
-    line-height: 140%;
-    /* identical to box height, or 101px */
-    text-align: center;
-
-    color: #FFFFFF;
-}
-
-.main p {
-    font-family: "Biennale";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 140%;
-    /* or 50px */
-    text-align: center;
-
-    color: #FFFFFF;
-
-
-}
-
-footer .left {
-    float: left;
-    text-align: left;
-}
-
-footer .right {
-    float: right;
-    text-align: right;
-}
-
-footer .secondLine {
-    font-size: 24px;
-}
-
-footer {
-    font-size: 36px;
-}
-
-footer a {
-    color: #fff;
-}
-
-footer ul {
-    list-style: none;
-}
-
-footer li {
-    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
